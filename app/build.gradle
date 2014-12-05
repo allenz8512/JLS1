@@ -36,7 +36,13 @@ tasks.withType(JavaCompile) {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.android.support:support-v13:21.0.2'
+    compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.android.support:cardview-v7:21.0.2'
     aarLinkSources 'com.android.support:support-v4:21.0.2:sources@jar'
     aarLinkSources 'com.android.support:appcompat-v7:21.0.2:sources@jar'
-    compile 'me.allenz:android-app-log:1.0.0'
+    aarLinkSources 'com.android.support:support-v13:21.0.2:sources@jar'
+    aarLinkSources 'com.android.support:recyclerview-v7:21.0.2:sources@jar'
+    aarLinkSources 'com.android.support:cardview-v7:21.0.2:sources@jar'
+    compile 'me.allenz:android-app-log:1.0.1@jar'
 }
